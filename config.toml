@@ -1,3 +1,5 @@
+publishDir = "docs"
+
 baseURL = '/'
 title = 'Cascade Tuts'
 theme = 'book'
