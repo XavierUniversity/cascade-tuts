@@ -55,5 +55,14 @@
       <description>Metadata Sets define the asset metadata. These may include the name of an asset, it&amp;rsquo;s description and/or keywords.</description>
     </item>
     
+    <item>
+      <title>Design Tasks</title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/design/tasks/</link>
+      <pubDate>Mon, 20 Apr 2020 19:27:37 +1000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/design/tasks/</guid>
+      <description>These tasks will help you setup a basic static Template and start setting up your new editable content page.</description>
+    </item>
+    
   </channel>
 </rss>
