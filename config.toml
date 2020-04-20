@@ -28,10 +28,10 @@ enableGitInfo = true
 
 [menu]
 # [[menu.before]]
-# [[menu.after]]
-#  name = "Github"
-#  url = "https://github.com/alex-shpak/hugo-book"
-#  weight = 10
+ [[menu.after]]
+  name = "Github"
+  url = "https://github.com/XavierUniversity/cascade-tuts"
+  weight = 10
 
 # [[menu.after]]
 #  name = "Hugo Themes"
@@ -59,12 +59,12 @@ enableGitInfo = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  # BookRepo = 'https://github.com/alex-shpak/hugo-book'
+  BookRepo = 'https://github.com/XavierUniversity/cascade-tuts'
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  # BookEditPath = 'edit/master/exampleSite'
+  BookEditPath = 'edit/master'
 
   # Configure the date format used on the pages
   # - In git information
