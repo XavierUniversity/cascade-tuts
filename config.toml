@@ -1,4 +1,4 @@
-publishDir = "docs"
+# publishDir = "docs"
 
 baseURL = 'https://xavieruniversity.github.io/cascade-tuts/'
 title = 'Cascade Tuts'

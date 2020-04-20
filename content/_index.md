@@ -14,7 +14,7 @@ in regards to how we utilize and execute our instance.
 This chapter helps you understand how to build out the basic HTML structure
 of your site. This will help align the template and content pieces into place.
 
-{{< button href="/docs/design" >}}Design{{< /button >}}
+{{< button relref="design" >}}Design{{< /button >}}
 
 <--->
 
@@ -23,7 +23,7 @@ of your site. This will help align the template and content pieces into place.
 Dive into the development side of Cascade CMS and how to turn your content
 into a rendered page using the content from your end users.
 
-{{< button href="/docs/development/" >}}Development{{< /button >}}
+{{< button relref="development" >}}Development{{< /button >}}
 
 {{< /columns >}}
 
@@ -32,4 +32,4 @@ into a rendered page using the content from your end users.
 When you're ready to dive into the Query Tool, Locator Tool and possibly even 
 Web Services or the REST API. 
 
-{{< button href="/docs/development" >}}Advanced Development{{< /button >}}
+{{< button relref="advanced" >}}Advanced Development{{< /button >}}
