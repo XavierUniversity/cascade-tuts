@@ -2,6 +2,7 @@
 title: 'Configurations'
 date: 2020-04-15T19:27:37+10:00
 weight: 2
+summary: Configurations are collections of outputs used to display page content. These options may include PDFs, HTML pages, or others.
 ---
 
 # What are Configurations?
@@ -10,7 +11,8 @@ Configurations are collections of one or more outputs used to display page conte
 Outputs allow the same content to take different forms (PDF, JSON, HTML, etc).
 
 Here at Xavier we create new configurations for the various Content Types. In V5,
-we are using the Configurations to reroute code to the proper formats based on the Content Type (e.g. Content, Landing Page, Academic Page, etc.).
+we are using the Configurations to reroute code to the proper formats based on 
+the [Content Type](content-types) (e.g. Content, Landing Page, Academic Page, etc.).
 
 A more detailed definition can be found on the Cascade CMS Knowledge Base for [Configurations](https://www.hannonhill.com/cascadecms/latest/design-in-cascade/configurations/index.html#Overview).
 
@@ -40,16 +42,16 @@ code foundation.
 container, depending on the architecture desired.
 3. Enter the Name and select the Parent Container, as desired.
 4. In the next section, you'll define the outputs, each output is configured using the following fields:
-  - Name (req)
-  - Default Output
-  - Type of Data - This only affects how the data is viewed within Cascade
-  - File Extension (req) - e.g. php, html. This will be appended to the file when published
-  - Template
-  - XSLT Format
-  - Publishable - Helpful to prevent pages you may want to keep on Cascade vs being published to the server
-  - Include XML Declaration in Published Files
-  - Regions
-    - This will override any TEMPLATE level assignments
+    - Name (req)
+    - Default Output
+    - Type of Data - This only affects how the data is viewed within Cascade
+    - File Extension (req) - e.g. php, html. This will be appended to the file when published
+    - Template
+    - XSLT Format
+    - Publishable - Helpful to prevent pages you may want to keep on Cascade vs being published to the server
+    - Include XML Declaration in Published Files
+    - Regions
+        - This will override any TEMPLATE level assignments
 5. Preview & Submit!
 
 You can [link to specific outputs](https://www.hannonhill.com/cascadecms/latest/design-in-cascade/configurations/linking-to-specific-outputs.html) if desired, but this is not a feature we are currently using at Xavier.

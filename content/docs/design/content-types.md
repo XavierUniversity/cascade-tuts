@@ -1,25 +1,17 @@
 ---
 title: 'Content Types'
 date: 2020-04-15T19:27:37+10:00
-weight: 2
+weight: 3
+summary: Content Types combine the look and feel to the editable fields.
 ---
 
-Content Types combine the look and feel of a page with the editable content fields of a page.
+# What are Content Types?
 
-<!--more-->
+Content types combine the look and feel ([Configuration](configurations)) to editable content fields ([Metadata Set](metadata) and [Data Definition](data-definition)) so non-technical users can create and edit pages.
 
-- [What are Content Types](#what-are-content-types)
-- [Creating a Content Type](#creating-a-content-type)
+In order to create a Content Type you must first setup a [Configuration](configurations), [Metadata Set](metadata), and determine if you want to use a WYSIWYG or a [Data Definition](data-definition). These items _can_ be modified after they are linked to a Content Type.
 
----
-
-## What are Content Types?
-
-Content types combine the look and feel ([Configuration](/docs/configuration)) to editable content fields ([Metadata Set](/docs/metadata) and [Data Definition](/docs/data-definition)) so non-technical users can create and edit pages.
-
-In order to create a Content Type you must first setup a Configuration, Metadata Set, and determine if you want to use a WYSIWYG or a Data Definition. These items _can_ be modified after they are linked to a Content Type.
-
-### Xavier Example:
+## Xavier Example:
 
 Staying with our Content Page example, we tie the Content Page DD, our default Metadata Set and Content Configuration 
 to be able to output the proper content.

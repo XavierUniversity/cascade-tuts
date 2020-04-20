@@ -1,19 +1,11 @@
 ---
 title: 'Metadata Sets'
 date: 2020-04-15T19:27:37+10:00
-weight: 2
+weight: 5
+summary: Metadata Sets define the asset metadata. These may include the name of an asset, it's description and/or keywords.
 ---
 
-Metadata Sets represents a curated collection of metadata fields used to describe content.
-
-<!--more-->
-
-- [What are Metadata Sets?](#what-are-metadata-sets)
-- [Creating a Metadata Set](#creating-a-metadata-set)
-
----
-
-## What are Metadata Sets?
+# What are Metadata Sets?
 
 Metadata is data that describes an asset. This can be as simple or as complicated as 
 desired for the use case. In the Xavier use case, we do our best to simplify this set
@@ -35,7 +27,7 @@ default metadata set. These are mainly used for pages and/or folders.
 - Require Authentication - locks the page behind a user login
 - Hide from Search Engine - includes a no-follow meta tag
 
-### Xavier Example:
+## Xavier Example:
 
 Our Default Metadata Set includes the three custom fields outlined above and also shows the following fields:
 

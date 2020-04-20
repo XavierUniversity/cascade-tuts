@@ -2,20 +2,18 @@
 title: 'Templates'
 date: 2020-04-15T19:27:37+10:00
 weight: 1
+summary: Templates are the most basic functional pieces. These combine static HTML with system regions to define where and how content is placed.
 ---
+
+# What are Templates?
 
 Templates are the lifeblood of building sites and structures within Cascade. They
 are XHTML documents that provide the basic page structure. 
 
-<!--more-->
-
-- [System Tags](#system-tags)
-- [Configuration](#configuration)
-
----
-
 Templates typically contain the basic HTML scaffolding and necessary scripts and styles
 to produce the desired look and feel of a page.
+
+## Creating a Template
 
 Templates can be created by clicking `Add Content > Default > Template`.
 
@@ -80,4 +78,4 @@ Available Tags:
 After defining custom `system-region`s you can then configure the template to use
 formats and blocks to render static, dynamic or function-based content.
 
-[Configurations](/docs/configurations) can also represent one or more outputs that are used to display page content.
+[Configurations](/docs/design/configurations) can also represent one or more outputs that are used to display page content.

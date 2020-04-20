@@ -1,6 +1,6 @@
 ---
 title: Cascade Tutorial
-type: docs
+bookToc: false
 ---
 
 # Cascade Tutorial
@@ -8,36 +8,28 @@ type: docs
 These docs are to help inform and instruct Xavier's Web Development crew
 in regards to how we utilize and execute our instance.
 
-## Astris ipse furtiva
+{{< columns >}}
+## Design
 
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
+This chapter helps you understand how to build out the basic HTML structure
+of your site. This will help align the template and content pieces into place.
 
+{{< button href="/docs/design" >}}Design{{< /button >}}
 
+<--->
 
-## Suis quot vota
+## Development
 
-Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
+Dive into the development side of Cascade CMS and how to turn your content
+into a rendered page using the content from your end users.
 
+{{< button href="/docs/development/" >}}Development{{< /button >}}
 
+{{< /columns >}}
 
-## Tempora nisi nunc
+## Advanced Development
 
-Lorem **markdownum** emicat gestu. Cannis sol pressit ducta. **Est** Idaei,
-tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis
-sequens!
+When you're ready to dive into the Query Tool, Locator Tool and possibly even 
+Web Services or the REST API. 
 
-    var panel = ram_design;
-    if (backup + system) {
-        file.readPoint = network_native;
-        sidebar_engine_device(cell_tftp_raster,
-                dual_login_paper.adf_vci.application_reader_design(
-                graphicsNvramCdma, lpi_footer_snmp, integer_model));
-    }
-
-## Locis suis novi cum suoque decidit eadem
-
-Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab?
+{{< button href="/docs/development" >}}Advanced Development{{< /button >}}
