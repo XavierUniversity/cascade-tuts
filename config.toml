@@ -1,6 +1,6 @@
 publishDir = "docs"
 
-baseURL = '/'
+baseURL = 'https://xavieruniversity.github.io/cascade-tuts/'
 title = 'Cascade Tuts'
 theme = 'book'
 
