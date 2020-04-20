@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Configurations are collections of outputs used to display page content. These options may include PDFs, HTML pages, or others."><meta property="og:title" content="Configurations" />
+<meta property="og:description" content="Configurations are collections of outputs used to display page content. These options may include PDFs, HTML pages, or others." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xavieruniversity.github.io/cascade-tuts/docs/design/configurations/" />
+<meta property="article:published_time" content="2020-04-15T19:27:37+10:00" />
+<meta property="article:modified_time" content="2020-04-20T10:01:29-04:00" />
+<title>Configurations | Cascade Tuts</title>
+<link rel="icon" href="https://xavieruniversity.github.io/cascade-tuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://xavieruniversity.github.io/cascade-tuts/book.min.740b420468492a97a43ec001165e46a9177e3e7671c6ee719e87d4a5281c6076.css" integrity="sha256-dAtCBGhJKpekPsABFl5GqRd&#43;PnZxxu5xnofUpSgcYHY=">
+<script defer src="https://xavieruniversity.github.io/cascade-tuts/en.search.min.c2d99520acefccc0cacaa494801939073a7c0d454abdb02069c64ee894f782dc.js" integrity="sha256-wtmVIKzvzMDKyqSUgBk5Bzp8DUVKvbAgacZO6JT3gtw="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/cascade-tuts"><span>Cascade Tuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/cascade-tuts/docs/design/" class="">Design</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/templates/" class="">Templates</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/configurations/" class="active">Configurations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/content-types/" class="">Content Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/data-definition/" class="">Data Definition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/metadata/" class="">Metadata Sets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/cascade-tuts/docs/development/" class="">Development</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/cascade-tuts/docs/advanced/" class="">Advanced Development</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://xavieruniversity.github.io/cascade-tuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Configurations</strong>
+
+  <label for="toc-control">
+    <img src="https://xavieruniversity.github.io/cascade-tuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-are-configurations">What are Configurations?</a>
+      <ul>
+        <li><a href="#xavier-example">Xavier Example:</a></li>
+        <li><a href="#creating-a-configuration">Creating a Configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="what-are-configurations">What are Configurations?</h1>
+<p>Configurations are collections of one or more outputs used to display page content.
+Outputs allow the same content to take different forms (PDF, JSON, HTML, etc).</p>
+<p>Here at Xavier we create new configurations for the various Content Types. In V5,
+we are using the Configurations to reroute code to the proper formats based on
+the 
+  <a href="/cascade-tuts/docs/design/content-types/">Content Type</a> (e.g. Content, Landing Page, Academic Page, etc.).</p>
+<p>A more detailed definition can be found on the Cascade CMS Knowledge Base for 
+  <a href="https://www.hannonhill.com/cascadecms/latest/design-in-cascade/configurations/index.html#Overview">Configurations</a>.</p>
+<h2 id="xavier-example">Xavier Example:</h2>
+<p>For content pages, we have 7 different configurations. The most basic is the Content Configuration where we
+swap the <code>DEFAULT</code> region with the appropriate Content Page format to ensure we write out the proper
+code foundation.</p>
+<p><strong>Configuration Settings</strong></p>
+<ul>
+<li><strong>Name:</strong> PHP</li>
+<li><strong>Type of Data:</strong> HTML</li>
+<li><strong>File Extension:</strong> PHP</li>
+<li><strong>Template:</strong> v5</li>
+<li><strong>XSLT Format:</strong> none</li>
+<li><strong>Template Defined Regions:</strong>
+<ul>
+<li>Custom JS, Footer, Head Content, Header, SVG</li>
+</ul>
+</li>
+<li><strong>Configuration Defined Regions:</strong>
+<ul>
+<li>DEFAULT - Inside of the custom format, we build out the content page structure
+<ul>
+<li>In most configurations, this is the ONLY item that will change.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="creating-a-configuration">Creating a Configuration</h2>
+<ol>
+<li>Navigate to Manage Site &gt; Configurations</li>
+<li>Add a new Configuration using Add &gt; Configuration. You may also want to add a new
+container, depending on the architecture desired.</li>
+<li>Enter the Name and select the Parent Container, as desired.</li>
+<li>In the next section, you&rsquo;ll define the outputs, each output is configured using the following fields:
+<ul>
+<li>Name (req)</li>
+<li>Default Output</li>
+<li>Type of Data - This only affects how the data is viewed within Cascade</li>
+<li>File Extension (req) - e.g. php, html. This will be appended to the file when published</li>
+<li>Template</li>
+<li>XSLT Format</li>
+<li>Publishable - Helpful to prevent pages you may want to keep on Cascade vs being published to the server</li>
+<li>Include XML Declaration in Published Files</li>
+<li>Regions
+<ul>
+<li>This will override any TEMPLATE level assignments</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Preview &amp; Submit!</li>
+</ol>
+<p>You can 
+  <a href="https://www.hannonhill.com/cascadecms/latest/design-in-cascade/configurations/linking-to-specific-outputs.html">link to specific outputs</a> if desired, but this is not a feature we are currently using at Xavier.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-are-configurations">What are Configurations?</a>
+      <ul>
+        <li><a href="#xavier-example">Xavier Example:</a></li>
+        <li><a href="#creating-a-configuration">Creating a Configuration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

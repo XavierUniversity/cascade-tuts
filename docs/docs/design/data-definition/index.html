@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Datadefinitions define the user editable features of an asset."><meta property="og:title" content="Data Definition" />
+<meta property="og:description" content="Datadefinitions define the user editable features of an asset." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xavieruniversity.github.io/cascade-tuts/docs/design/data-definition/" />
+<meta property="article:modified_time" content="2020-04-20T10:01:29-04:00" />
+<title>Data Definition | Cascade Tuts</title>
+<link rel="icon" href="https://xavieruniversity.github.io/cascade-tuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://xavieruniversity.github.io/cascade-tuts/book.min.740b420468492a97a43ec001165e46a9177e3e7671c6ee719e87d4a5281c6076.css" integrity="sha256-dAtCBGhJKpekPsABFl5GqRd&#43;PnZxxu5xnofUpSgcYHY=">
+<script defer src="https://xavieruniversity.github.io/cascade-tuts/en.search.min.c2d99520acefccc0cacaa494801939073a7c0d454abdb02069c64ee894f782dc.js" integrity="sha256-wtmVIKzvzMDKyqSUgBk5Bzp8DUVKvbAgacZO6JT3gtw="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/cascade-tuts"><span>Cascade Tuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/cascade-tuts/docs/design/" class="">Design</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/templates/" class="">Templates</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/configurations/" class="">Configurations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/content-types/" class="">Content Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/data-definition/" class="active">Data Definition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/cascade-tuts/docs/design/metadata/" class="">Metadata Sets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/cascade-tuts/docs/development/" class="">Development</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/cascade-tuts/docs/advanced/" class="">Advanced Development</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://xavieruniversity.github.io/cascade-tuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Data Definition</strong>
+
+  <label for="toc-control">
+    <img src="https://xavieruniversity.github.io/cascade-tuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-are-data-definitions">What are Data Definitions?</a>
+      <ul>
+        <li><a href="#xavier-example">Xavier Example</a></li>
+        <li><a href="#hero-group">Hero (Group)</a></li>
+        <li><a href="#shared-fields">Shared Fields</a>
+          <ul>
+            <li><a href="#extras-shared-field">Extras Shared Field</a></li>
+          </ul>
+        </li>
+        <li><a href="#smart-fields">Smart Fields</a>
+          <ul>
+            <li><a href="#example">Example</a></li>
+          </ul>
+        </li>
+        <li><a href="#creating-a-data-definition">Creating a Data Definition</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="what-are-data-definitions">What are Data Definitions?</h1>
+<p>Data Definitions are the editable features of a specific page or block.</p>
+<h2 id="xavier-example">Xavier Example</h2>
+<p>Continuing on our Content Page example, the Data Definition is defined to include:</p>
+<ol>
+<li>
+<h2 id="hero-group">Hero (Group)</h2>
+</li>
+<li>WYSIWYG (wysiwyg editor)
+<ul>
+<li>Uses a custom WYSIWYG Configuration to hide/show various features, which gives
+dev staff additional control over what the users are able to insert onto their pages.</li>
+</ul>
+</li>
+<li>Extras (Group)
+<ul>
+<li>Custom files (JS and CSS) which is available to administrative groups only</li>
+</ul>
+</li>
+</ol>
+<p>What you cannot see from the page editor itself, is that all of these items are
+considered &ldquo;
+  <a href="/cascade-tuts/#shared-fields">Shared Fields</a>&quot;. These fields are reusable elements that allow for minimal
+management, but widespread use across multiple data definitions.</p>
+<h2 id="shared-fields">Shared Fields</h2>
+<p>Shared fields are individual fields (e.g. WYSIWYG editor) or individual groups of fields (e.g. Hero). These
+fields allow us to create reusable entities for multiple data definitions. A big example of this is the extra&rsquo;s group.</p>
+<h3 id="extras-shared-field">Extras Shared Field</h3>
+<p>The Extra&rsquo;s group is used on all data definitions to be able to add custom stylesheets and/or scripts
+to either add or supplement functionality on an individual page. Rather than code this individually
+to each Data Definition, the shared field was created to be able to reuse, rather than duplicate.</p>
+<h2 id="smart-fields">Smart Fields</h2>
+<p>Smart fields are used to show or hide subsequent sections based on a user selection.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>User selects <code>internal</code> on a radio button, showing a page chooser</li>
+<li>Alternatively, user selects <code>external</code> and receives a text box</li>
+</ul>
+<h2 id="creating-a-data-definition">Creating a Data Definition</h2>
+<p>To create a Data Definition</p>
+<ol>
+<li>Navigate to Manage Site &gt; Data Definitions. You may also want to add a new
+container, depending on the architecture desired.</li>
+<li>Enter the Name and select the Parent Container, as desired.</li>
+<li>Using either the Builder or XML editor, add or update your desired fields.
+<ul>
+<li>We recommend using the Builder to setup the initial data definition, and review the XML for a better understanding.</li>
+<li>Shared Fields can be used by adding a field and selecting Choose Shared Field</li>
+<li>Smart fields can be used by viewing the Advanced Options</li>
+</ul>
+</li>
+</ol>
+<blockquote class="book-hint warning">
+  <p><strong>Data Definition Warning</strong></p>
+<p>Restructuring and/or renaming of fields may cause a loss of content. Use caution when
+moving a field out of a group and/or into a group that doesn&rsquo;t permit multiple groups
+OR has a lower maximum number of groups allowed.</p>
+
+</blockquote>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-are-data-definitions">What are Data Definitions?</a>
+      <ul>
+        <li><a href="#xavier-example">Xavier Example</a></li>
+        <li><a href="#hero-group">Hero (Group)</a></li>
+        <li><a href="#shared-fields">Shared Fields</a>
+          <ul>
+            <li><a href="#extras-shared-field">Extras Shared Field</a></li>
+          </ul>
+        </li>
+        <li><a href="#smart-fields">Smart Fields</a>
+          <ul>
+            <li><a href="#example">Example</a></li>
+          </ul>
+        </li>
+        <li><a href="#creating-a-data-definition">Creating a Data Definition</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

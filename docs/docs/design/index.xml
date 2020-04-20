@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Cascade Tuts</title>
+    <link>https://xavieruniversity.github.io/cascade-tuts/docs/design/</link>
+    <description>Recent content in Design on Cascade Tuts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
+    
+	<atom:link href="https://xavieruniversity.github.io/cascade-tuts/docs/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Templates</title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/design/templates/</link>
+      <pubDate>Wed, 15 Apr 2020 19:27:37 +1000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/design/templates/</guid>
+      <description>Templates are the most basic functional pieces. These combine static HTML with system regions to define where and how content is placed.</description>
+    </item>
+    
+    <item>
+      <title>Configurations</title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/design/configurations/</link>
+      <pubDate>Wed, 15 Apr 2020 19:27:37 +1000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/design/configurations/</guid>
+      <description>Configurations are collections of outputs used to display page content. These options may include PDFs, HTML pages, or others.</description>
+    </item>
+    
+    <item>
+      <title>Content Types</title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/design/content-types/</link>
+      <pubDate>Wed, 15 Apr 2020 19:27:37 +1000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/design/content-types/</guid>
+      <description>Content Types combine the look and feel to the editable fields.</description>
+    </item>
+    
+    <item>
+      <title>Data Definition</title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/design/data-definition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/design/data-definition/</guid>
+      <description>Datadefinitions define the user editable features of an asset.</description>
+    </item>
+    
+    <item>
+      <title>Metadata Sets</title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/design/metadata/</link>
+      <pubDate>Wed, 15 Apr 2020 19:27:37 +1000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/design/metadata/</guid>
+      <description>Metadata Sets define the asset metadata. These may include the name of an asset, it&amp;rsquo;s description and/or keywords.</description>
+    </item>
+    
+  </channel>
+</rss>
