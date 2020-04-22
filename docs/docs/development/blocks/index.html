@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Metadata Sets define the asset metadata. These may include the name of an asset, it&rsquo;s description and/or keywords."><meta property="og:title" content="Metadata Sets" />
-<meta property="og:description" content="Metadata Sets define the asset metadata. These may include the name of an asset, it&rsquo;s description and/or keywords." />
+<meta name="description" content="Blocks A block is a piece of content that can be inserted into any page region. This can be done with or without styling. This items are commonly used for repeated content. Such as, an &ldquo;About&rdquo; section that appears on every press release. This would allow the content to be pushed out without managing it in multiple places.
+XHTML/Data Definition XHTML / Data Definition Blocks can essentially be compared to a Page."><meta property="og:title" content="Blocks" />
+<meta property="og:description" content="Blocks A block is a piece of content that can be inserted into any page region. This can be done with or without styling. This items are commonly used for repeated content. Such as, an &ldquo;About&rdquo; section that appears on every press release. This would allow the content to be pushed out without managing it in multiple places.
+XHTML/Data Definition XHTML / Data Definition Blocks can essentially be compared to a Page." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xavieruniversity.github.io/cascade-tuts/docs/design/metadata/" />
-<meta property="article:published_time" content="2020-04-15T19:27:37+10:00" />
-<meta property="article:modified_time" content="2020-04-20T10:01:29-04:00" />
-<title>Metadata Sets | Cascade Tuts</title>
+<meta property="og:url" content="https://xavieruniversity.github.io/cascade-tuts/docs/development/blocks/" />
+<meta property="article:published_time" content="2018-11-28T15:14:39+10:00" />
+<meta property="article:modified_time" content="2018-11-28T15:14:39+10:00" />
+<title>Blocks | Cascade Tuts</title>
 <link rel="icon" href="https://xavieruniversity.github.io/cascade-tuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="https://xavieruniversity.github.io/cascade-tuts/book.min.740b420468492a97a43ec001165e46a9177e3e7671c6ee719e87d4a5281c6076.css" integrity="sha256-dAtCBGhJKpekPsABFl5GqRd&#43;PnZxxu5xnofUpSgcYHY=">
 <script defer src="https://xavieruniversity.github.io/cascade-tuts/en.search.min.8637bd9aed27b86e48e85f2b94a257ca9ae2c319f9ada1b03f0f75560b56eba2.js" integrity="sha256-hje9mu0nuG5I6F8rlKJXypriwxn5raGwPw91VgtW66I="></script>
@@ -121,7 +123,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/cascade-tuts/docs/design/metadata/" class="active">Metadata Sets</a>
+    <a href="/cascade-tuts/docs/design/metadata/" class="">Metadata Sets</a>
   
 
         </li>
@@ -162,7 +164,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/cascade-tuts/docs/development/blocks/" class="">Blocks</a>
+    <a href="/cascade-tuts/docs/development/blocks/" class="active">Blocks</a>
   
 
         </li>
@@ -249,7 +251,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="https://xavieruniversity.github.io/cascade-tuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Metadata Sets</strong>
+  <strong>Blocks</strong>
 
   <label for="toc-control">
     <img src="https://xavieruniversity.github.io/cascade-tuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -263,10 +265,16 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-are-metadata-sets">What are Metadata Sets?</a>
+    <li><a href="#blocks">Blocks</a>
       <ul>
-        <li><a href="#xavier-example">Xavier Example:</a></li>
-        <li><a href="#creating-a-metadata-set">Creating a Metadata Set</a></li>
+        <li><a href="#xhtmldata-definition">XHTML/Data Definition</a></li>
+        <li><a href="#xml">XML</a></li>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#index">Index</a>
+          <ul>
+            <li><a href="#using-an-index-block">Using an Index Block</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -280,48 +288,34 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="what-are-metadata-sets">What are Metadata Sets?</h1>
-<p>Metadata is data that describes an asset. This can be as simple or as complicated as
-desired for the use case. In the Xavier use case, we do our best to simplify this set
-across the entire site (including folders, files and pages).</p>
-<p>While there are a number of built-in fields that include:</p>
-<ul>
-<li>Name (display name, title)</li>
-<li>Summary (teaser, summary, description)</li>
-<li>Keywords</li>
-<li>Author</li>
-<li>Dates (start, end, review)</li>
-<li>Expiration Folder</li>
-</ul>
-<p>We can also define some custom fields. We currently use 3 custom fields in our
-default metadata set. These are mainly used for pages and/or folders.</p>
-<ul>
-<li>Show in Navigation - shows/hides a page from the navigation menus on a content site, or other dynamic navigation areas</li>
-<li>Require Authentication - locks the page behind a user login</li>
-<li>Hide from Search Engine - includes a no-follow meta tag</li>
-</ul>
-<h2 id="xavier-example">Xavier Example:</h2>
-<p>Our Default Metadata Set includes the three custom fields outlined above and also shows the following fields:</p>
-<ul>
-<li>Display Name, Title, Keywords, and Description</li>
-</ul>
-<p>All other fields are hidden, as we do not intend to use them in our basic pages.</p>
-<h2 id="creating-a-metadata-set">Creating a Metadata Set</h2>
-<ol>
-<li>Navigate to Manage Site &gt; Metadata Sets and click Add. You may also want to add a new
-container, depending on the architecture desired.</li>
-<li>Enter the Name and select the Parent Container, as desired.</li>
-<li>Identify which built-in fields you&rsquo;d want to use and define any of the following:</li>
-</ol>
-<ul>
-<li>Help Text</li>
-<li>Visibility - Determines where a field is shown. Inline = Content Tab; Visible = Shown on Metadata tab; Hidden = Not shown.</li>
-<li>Required</li>
-</ul>
-<ol start="4">
-<li>Define any Custom fields you would want to display.</li>
-<li>Preview &amp; Submit!</li>
-</ol>
+  <article class="markdown"><h1 id="blocks">Blocks</h1>
+<p>A block is a piece of content that can be inserted into any page region. This can be
+done with or without styling. This items are commonly used for repeated content.
+Such as, an &ldquo;About&rdquo; section that appears on every press release. This would
+allow the content to be pushed out without managing it in multiple places.</p>
+<h2 id="xhtmldata-definition">XHTML/Data Definition</h2>
+<p>XHTML / Data Definition Blocks can essentially be compared to a Page. However,
+these items cannot be published on their own. They have to be assigned to a region
+before being rendered to a page.</p>
+<p>To use a simple XHTML (WYSIWYG) you simply add a new Block (<code>Add Content &gt; Default &gt; Block</code>) to your site
+and fill in the Editor content.</p>
+<p>To use a Data Definition, click <code>Properties</code> and assign the appropriate Data Definition
+and/or meta data set.</p>
+<p><strong>Reminder:</strong> Blocks cannot be published independently and this content will only
+be rendered to a page IF it is assigned on the Template, Configuration, or Page Level.</p>
+<h2 id="xml">XML</h2>
+<p>An XML Block</p>
+<h2 id="text">Text</h2>
+<p>Content Blocks are defined as any block that uses XHTML or a Data Definition form fields for editing content</p>
+<h2 id="index">Index</h2>
+<p>Index Blocks are dynamically generated system assets, as XML. They can be used
+to aggregate folders, files or assets (or a combination of all).</p>
+<p>Index blocks are typically used for creating dynamic content such as navigation menus,
+sitemaps, etc.</p>
+<p>Index blocks can be used on an individual folder, or across an entire site.</p>
+<h3 id="using-an-index-block">Using an Index Block</h3>
+<p>Index blocks can be created by using <code>Add Content &gt; Default &gt; Block</code>. You will then
+select the option of <code>Index Block</code>, and placing it into a folder.</p>
 </article>
  
       
@@ -332,16 +326,10 @@ container, depending on the architecture desired.</li>
 
 
 
-  <div><a class="flex align-center" href="https://github.com/XavierUniversity/cascade-tuts/commit/161c5b0df8de63fd105dd3c233f72ae5e80d8a15" title='Last modified by Greg McMullen | April 20, 2020' target="_blank" rel="noopener">
-      <img src="https://xavieruniversity.github.io/cascade-tuts/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>April 20, 2020</span>
-    </a>
-  </div>
-
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/XavierUniversity/cascade-tuts/edit/master/content/docs/design/metadata.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/XavierUniversity/cascade-tuts/edit/master/content/docs/development/blocks.md" target="_blank" rel="noopener">
       <img src="https://xavieruniversity.github.io/cascade-tuts/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -369,10 +357,16 @@ container, depending on the architecture desired.</li>
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-are-metadata-sets">What are Metadata Sets?</a>
+    <li><a href="#blocks">Blocks</a>
       <ul>
-        <li><a href="#xavier-example">Xavier Example:</a></li>
-        <li><a href="#creating-a-metadata-set">Creating a Metadata Set</a></li>
+        <li><a href="#xhtmldata-definition">XHTML/Data Definition</a></li>
+        <li><a href="#xml">XML</a></li>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#index">Index</a>
+          <ul>
+            <li><a href="#using-an-index-block">Using an Index Block</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>

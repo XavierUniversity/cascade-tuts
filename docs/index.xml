@@ -28,6 +28,16 @@
     </item>
     
     <item>
+      <title>Blocks</title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/development/blocks/</link>
+      <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/development/blocks/</guid>
+      <description>Blocks A block is a piece of content that can be inserted into any page region. This can be done with or without styling. This items are commonly used for repeated content. Such as, an &amp;ldquo;About&amp;rdquo; section that appears on every press release. This would allow the content to be pushed out without managing it in multiple places.
+XHTML/Data Definition XHTML / Data Definition Blocks can essentially be compared to a Page.</description>
+    </item>
+    
+    <item>
       <title>Content Types</title>
       <link>https://xavieruniversity.github.io/cascade-tuts/docs/design/content-types/</link>
       <pubDate>Wed, 15 Apr 2020 19:27:37 +1000</pubDate>
@@ -61,6 +71,33 @@
       
       <guid>https://xavieruniversity.github.io/cascade-tuts/docs/design/tasks/</guid>
       <description>These tasks will help you setup a basic static Template and start setting up your new editable content page.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/development/code-sections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/development/code-sections/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/development/formats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/development/formats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xavieruniversity.github.io/cascade-tuts/docs/development/velocity-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xavieruniversity.github.io/cascade-tuts/docs/development/velocity-tools/</guid>
+      <description></description>
     </item>
     
   </channel>
